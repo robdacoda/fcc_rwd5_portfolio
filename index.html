@@ -19,8 +19,7 @@
 
     <section id="welcome-section" class="all-sections">
       <div class="spacer-top"></div>
-
-      <div id="welcome-title">
+      <div class="section-container">
         <br />
         <div class="welcome-row">
           <h2 class="right-align">Problem</h2>
@@ -38,81 +37,105 @@
           <h2 class="left-align">Satisfied</h2>
         </div>
 
-        <h1>Code by Rob</h1>
+        <br />
+        <div class="title">
+          <h1>Code by Rob</h1>
+        </div>
+        <br />
+
+        <ul>
+          <li>UI/UX</li>
+          <li>Responsive</li>
+          <li>Full-stack</li>
+        </ul>
+
+        <ul>
+          <li>Mobile</li>
+          <li>Apps</li>
+          <li>Analytics</li>
+        </ul>
+        </br>
+
       </div>
-
-      <ul>
-        <li>UI/UX</li>
-        <li>Responsive</li>
-        <li>Full-stack</li>
-      </ul>
-
-      <ul>
-        <li>Mobile</li>
-        <li>Apps</li>
-        <li>Analytics</li>
-      </ul>
+      <!-- section-container -->
     </section>
 
     <section id="projects" class="all-sections">
       <div class="spacer-top"></div>
-
-      <div id="projects-title">
-        <h1>Projects</h1>
-      </div>
-
-      <div id="projects-content-container">
-        <div id="projects-links-container">
-          <div id="project-one" class="project-tile">
-            <div class="image-container">
-              <a target="_blank" href="https://robdacoda.github.io/fcc_rwd4_product/"> <img src="./resources/paige-weber-KRNk8oosHTg-unsplash.jpg" alt="Product Page Image" /></a>
-            </div>
-            <div class="project-name">Product Page</div>
-          </div>
-
-          <div id="project-two" class="project-tile">
-            <div class="image-container">
-              <img src="resources/gettyimages-15598628-170667a.jpg" alt="Project Two Image" />
-            </div>
-            <div class="project-name">Project Two</div>
-          </div>
-
-          <div id="project-three" class="project-tile">
-            <div class="image-container">
-              <img src="resources/christian_golczynski.png" alt="Project Three Image" />
-            </div> 
-            <div class="project-name">Project Three</div>
-          </div>
-          <div id="project-four" class="project-tile">
-            <div class="image-container">
-              <img src="resources/Marines-e1605019991471.jpg" alt="Project Four Image" class="marines"/>
-            </div>
-          <div class="project-name">Project Four</div>
+      <div class="section-container">
+        <div class="title">
+          <h1>Projects</h1>
         </div>
-      </div>
-    </section>
 
+        <div id="projects-content-container">
+          <div class="project-tiles-container">
+            <div id="project-one" class="project-tile">
+              <div class="image-container">
+                <a target="_blank" href="https://robdacoda.github.io/fcc_rwd4_product/"> <img src="./resources/paige-weber-KRNk8oosHTg-unsplash.jpg" alt="Product Page Image" /></a>
+              </div>
+              <div class="project-name">Product Page</div>
+            </div>
+            <!-- project-tile -->
+
+            <div id="project-two" class="project-tile">
+              <div class="image-container">
+                <img src="resources/gettyimages-155598628-170667a.jpg" alt="Project Two Image" />
+              </div>
+              <div class="project-name">Project Two</div>
+            </div>
+            <!-- project-tile -->
+
+            <div id="project-three" class="project-tile">
+              <div class="image-container">
+                <img src="resources/christian_golczynski.png" alt="Project Three Image" />
+              </div>
+              <div class="project-name">Project Three</div>
+            </div>
+            <!-- project-tile -->
+
+            <div id="project-four" class="project-tile">
+              <div class="image-container">
+                <img src="resources/Marines-e1605019991471.jpg" alt="Project Four Image" />
+              </div>
+              <div class="project-name">Project Four</div>
+            </div>
+            <!-- project-tile -->
+
+          </div>
+          <!-- project-tiles-container -->
+        </div>
+        <!-- projects-content-container -->
+      </div>
+      <!-- section-container -->
+    </section>
+    
     <section id="contact" class="all-sections">
       <div class="spacer-top"></div>
-
-      <div id="contact-title">
-        <h1>Contact</h1>
-      </div>
-
-      <div id="contact-content-container">
-        <div id="contact-text-container">
-          <a id="profile-link" target="_blank" href="https://github.com/robdacoda">Visit us on Github</a>
-          <a target="_blank" href="">click to test link</a>
-          robdacoda@gmail.com
+      <div class="section-container">
+        <div class="title">
+          <h1>Contact</h1>
         </div>
-        <div id="contact-form-container">
-          <form>
-            <br />
-            Send us a note <br /><br />
-            <input id="email" type="email" placeholder="email" />
-          </form>
+
+        <div id="contact-content-container">
+          <div id="contact-text-container">
+            <a id="profile-link" target="_blank" href="https://github.com/robdacoda">Visit us on Github</a>
+            <a target="_blank" href="">robdacoda@gmail.com</a>
+          </div>
+
+          <div id="contact-form-container">
+            <form>
+              <br />
+              Send us a note <br /><br />
+              <textarea id="text" type="text" placeholder="type here" size="160" rows="5" cols="36"></textarea>
+              <br /><br />
+              <input type="submit" value="submit" />
+            </form>
+          </div>
+          <!-- form-container -->
         </div>
+        <!-- contact-content-container -->
       </div>
+      <!-- section-container -->
     </section>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

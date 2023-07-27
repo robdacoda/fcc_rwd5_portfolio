@@ -1,3 +1,7 @@
+body {
+   margin: 0;
+}
+
 code { 
    display: block;
    background-color: rgb(210, 210, 210);
@@ -47,13 +51,14 @@ body, #navbar {
    z-index: 1; /* stay on top */
 
    box-sizing: border-box;
-   width: 99%;
    height: 60px;
-   border-bottom: 1px solid black;
+   width: calc(100vw - 35px); /* I have no idea why this is 35px instead of 20px. From where did the extra 15px come? */ 
+   margin: 0 10px;
 
+   border: 1px solid black;
    display: flex;
    justify-content: center;
-   padding-top: 18px;  
+   padding-top: 18px;
 } 
 
 #nav-list { 
@@ -78,11 +83,21 @@ body, #navbar {
    box-sizing: border-box;
    height: 100vh;
    min-height: 415px;
-   border: 1px black solid;
-   margin: 20px 10px;
+   /* border: 1px black solid; */
+   /* margin: 0px 2%; */
   
 }
 
+.section-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   box-sizing: border-box;
+   height: calc(100vh - 60px);
+   border: 1px black solid;
+   margin: 0 10px;
+
+}
 
 .spacer-top {
    height: 60px;
@@ -96,7 +111,8 @@ body, #navbar {
 }
 
 .welcome-row h2 {
-   width: 200px;
+   width: 80px;
+   text-align: center;
    /* border: 1px solid black; */
 
 }
@@ -110,7 +126,7 @@ body, #navbar {
 }
 
 .center {
-   width: 120px;
+   width: 20px;
 
 }
 
@@ -126,50 +142,46 @@ body, #navbar {
    text-align: center;
    /* margin: 1em 2em; */
    color:rgb(162, 160, 160);
+   margin: 1rem;
 
 }
 
-#welcome-title,
-#projects-title,
-#contact-title {
+.title {
    text-align: center;
 
 }
 
+/* 
 #welcome-content-container, 
 #projects-content-container, 
 #contact-content-container {
    position: relative; 
    /* so that we will be able to use  
-   relative positioning with divs inside */
+   relative positioning with divs inside
 
    background-repeat: no-repeat;
    background-position: center top;
    background-size: contain;
 
-}
-
+} 
+*/
+/* 
 #welcome-content-container {
    background-image: url("");
-         /* Getty Images */
-         /* Photographer unknown */
  
 }
+ */
 
 #projects-content-container {
-   background-image: url("");
+   /* background-image: url(""); */
    display: flex;
    justify-content: center;
    /* border: 1px solid black; */
-  
+   
 }
 
-#projects-links-container {
-   /* width: 100%; */
-   /* position: absolute; */
-   /* right: 0px; */
-   /* bottom: 0px; */
-   
+.project-tiles-container {
+
    box-sizing: border-box;
    min-width: 265px;
    min-height: 265px;
@@ -177,15 +189,13 @@ body, #navbar {
    width: 75vh;
 
    padding: 10px;
-   border: 2px solid orange;
+   /* border: 2px solid orange; */
 
    display: flex;
    flex-wrap: wrap;
-   
 }
 
 .project-tile {
-   /* display: block-inline; */
    height: 40%;
    width: 40%;
    margin: 5%;
@@ -201,18 +211,11 @@ body, #navbar {
 
 
 .project-tile img {
-   /* display: block-inline; */
    width: 100%;
    height: 100%;
    object-position: center;
    object-fit: cover;
    background-color: rgb(162, 160, 160);
-}
-
-.marines {
-   height: 100%;
-   object-fit: cover;
-
 }
 
 .project-name {
@@ -239,7 +242,7 @@ body, #navbar {
    text-align: center;
    margin-top: 30px;
    margin-bottom: 30px;
-
+   font-size: 3vh;
   
 }
 
@@ -247,7 +250,7 @@ body, #navbar {
 
     color: blue;
     font-size: 3vh;
-    margin: 4px;
+    margin: 7px;
 
  }
 
@@ -256,14 +259,15 @@ body, #navbar {
 
    container-type: size;
    width: 90%;
-   height: 100px;
-   border: 2px solid purple;
+   height: 240px;
+   /* border: 2px solid purple; */
    text-align: center;
    color: white;
-
+   font-size: 3vh;
    
 }
 
+/* 
 @media (max-width: 1440px) {
 
    #welcome-section ul li {
@@ -277,10 +281,11 @@ body, #navbar {
 @media (max-width: 756px) {
 
 
-}
+
+} */
 
 @media (max-width: 480px) {
-
+/* 
    h1 {
       font-size: 2rem;
    } 
@@ -292,16 +297,21 @@ body, #navbar {
    h3 {
       font-size: .8rem;
    }
-  
+*/
+   h5 {
+      font-size: .8rem;
+   } 
+
+/*   
    #welcome-section ul li {
       margin: 0rem 1.2rem;
 
-   }
+   } */
 
 
 }
 
-
+/* 
 @media (max-width: 374px) {
     
    #welcome-section ul li { 
@@ -311,4 +321,4 @@ body, #navbar {
 
 
    
-}
+} */
